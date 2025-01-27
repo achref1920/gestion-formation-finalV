@@ -1,0 +1,38 @@
+<app-admin-nav-bar></app-admin-nav-bar>
+
+<div class="container mt-4">
+  <div class="d-grid gap-2 mb-4">
+    <button class="btn btn-lg btn-primary" (click)="ajoutCandidat()">
+      <i class="bi bi-person-plus-fill me-2"></i>Ajouter un Candidat
+    </button>
+  </div>
+
+  <h1 class="display-5 fw-bold text-center mb-4">Liste des Candidats</h1>
+
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let user of CandidatList">
+      <div class="card h-100 shadow-sm">
+        <img [src]="user.photo" class="card-img-top" alt="Photo de {{ user.nom }}" style="height: 200px; object-fit: cover;">
+
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ user.nom }} {{ user.prenom }}</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>ID:</strong> {{ user.id }}</li>
+            <li class="list-group-item"><strong>Email:</strong> {{ user.email }}</li>
+            <li class="list-group-item"><strong>CIN:</strong> {{ user.cin }}</li>
+            <li class="list-group-item"><strong>Mot de Passe:</strong> {{ user.motDePasse }}</li>
+          </ul>
+        </div>
+
+        <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+          <button (click)="editCandidat(user.id)" class="btn btn-warning btn-sm">
+            <i class="bi bi-pencil-fill me-1"></i>Modifier
+          </button>
+          <button (click)="deleteUser(user.id)" class="btn btn-danger btn-sm">
+            <i class="bi bi-trash-fill me-1"></i>Supprimer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold text-dark mb-3">
+      Programme de Formation
+    </h1>
+    <p class="lead text-muted">
+      Découvrez l'ensemble des catégories de formations disponibles.
+    </p>
+    <div class="border-bottom border-3 border-primary w-25 mx-auto"></div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4 col-sm-6" *ngFor="let formation of formations">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Catégories:</h5>
+          <p class="card-text">{{formation.categories.join(', ')}}</p>
+          <h5 class="card-title fw-bold">Programme:</h5>
+          <a [href]="formation.programme" target="_blank" class="btn btn-outline-primary btn-sm">Voir le programme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

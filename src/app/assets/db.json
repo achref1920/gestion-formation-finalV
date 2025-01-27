@@ -1,0 +1,307 @@
+{
+  "candidats": [
+    {
+      "id": "1",
+      "prenom": "Jean",
+      "nom": "Dupont",
+      "email": "jean.dupont@example.com",
+      "cin": "123456789",
+      "photo": "https://picsum.photos/300/?random=1",
+      "motDePasse": "0000"
+    },
+    {
+      "id": "2",
+      "prenom": "Marie",
+      "nom": "Martin",
+      "email": "marie.martin@example.com",
+      "cin": "987654321",
+      "photo": "https://picsum.photos/300/?random=2",
+      "motDePasse": "00001"
+    },
+    {
+      "id": "3",
+      "prenom": "Luc",
+      "nom": "Bernard",
+      "email": "luc.bernard@example.com",
+      "cin": "456789123",
+      "photo": "https://picsum.photos/300/?random=3",
+      "motDePasse": "00002"
+    },
+    {
+      "id": "4",
+      "prenom": "Sophie",
+      "nom": "Lemoine",
+      "email": "sophie.lemoine@example.com",
+      "cin": "321654987",
+      "photo": "https://picsum.photos/300/?random=66",
+      "motDePasse": "00003"
+    },
+    {
+      "id": "5",
+      "prenom": "Thomas",
+      "nom": "Garnier",
+      "email": "thomas.garnier@example.com",
+      "cin": "654321789",
+      "photo": "https://picsum.photos/300/?random=4",
+      "motDePasse": "1234"
+    }
+  ],
+  "formateurs": [
+    {
+      "id": "1",
+      "prenom": "Alice",
+      "nom": "Durand",
+      "email": "alice.durand@example.com",
+      "telephone": "0123456789",
+      "cin": "111222333",
+      "photo": "https://picsum.photos/300/?random=5",
+      "cv": "https://drive.google.com/file/d/17pd191et-aQXXdpAsH9e0ayKAECbHBXE/view?usp=drive_link",
+      "specialites": [
+        "Data Science",
+        "Apprentissage Automatique"
+      ]
+    },
+    {
+      "id": "2",
+      "prenom": "Bob",
+      "nom": "Lefevre",
+      "email": "bob.lefevre@example.com",
+      "telephone": "9876543210",
+      "cin": "444555666",
+      "photo": "https://picsum.photos/300/?random=6",
+      "cv": "https://drive.google.com/file/d/17pd191et-aQXXdpAsH9e0ayKAECbHBXE/view?usp=drive_link",
+      "specialites": [
+        "Développement Web",
+        "Design UI/UX"
+      ]
+    },
+    {
+      "id": "3",
+      "prenom": "Claire",
+      "nom": "Moreau",
+      "email": "claire.moreau@example.com",
+      "telephone": "0123456780",
+      "cin": "777888999",
+      "photo": "https://picsum.photos/300/?random=7",
+      "cv": "https://drive.google.com/file/d/17pd191et-aQXXdpAsH9e0ayKAECbHBXE/view?usp=drive_link",
+      "specialites": [
+        "Marketing Digital",
+        "SEO"
+      ]
+    },
+    {
+      "id": "4",
+      "prenom": "David",
+      "nom": "Rousseau",
+      "email": "david.rousseau@example.com",
+      "telephone": "0987654321",
+      "cin": "222333444",
+      "photo": "https://picsum.photos/300/?random=8",
+      "cv": "https://drive.google.com/file/d/17pd191et-aQXXdpAsH9e0ayKAECbHBXE/view?usp=drive_link",
+      "specialites": [
+        "Gestion de Projet",
+        "Agilité"
+      ]
+    },
+    {
+      "id": "5",
+      "prenom": "Emma",
+      "nom": "Leroy",
+      "email": "emma.leroy@example.com",
+      "telephone": "1234567890",
+      "cin": "555666777",
+      "photo": "https://picsum.photos/300/?random=9",
+      "cv": "https://drive.google.com/file/d/17pd191et-aQXXdpAsH9e0ayKAECbHBXE/view?usp=drive_link",
+      "specialites": [
+        "Développement Mobile",
+        "Java"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "1",
+      "image": "https://picsum.photos/300/?random=11",
+      "titre": "Introduction à la Data Science",
+      "description": "Apprenez les bases de la Data Science.",
+      "chargeHoraire": 40,
+      "difficulte": "débutant",
+      "tags": [
+        "data",
+        "science",
+        "introduction"
+      ],
+      "categories": [
+        "Data Science",
+        "Technologie"
+      ],
+      "programme": "https://drive.google.com/file/d/1W6eGONAvJwNbbitOziSZdYdn3kmfa92a/view?usp=drive_link"
+    },
+    {
+      "id": "2",
+      "image": "https://picsum.photos/300/?random=12",
+      "titre": "Bootcamp de Développement Web",
+      "description": "Devenez un développeur web full-stack.",
+      "chargeHoraire": 60,
+      "difficulte": "intermédiaire",
+      "tags": [
+        "web",
+        "développement",
+        "bootcamp"
+      ],
+      "categories": [
+        "Développement Web",
+        "Technologie"
+      ],
+      "programme": "https://drive.google.com/file/d/1XgNue4jO3dQZOleCymdfzp4AdXT1Phew/view?usp=drive_link"
+    },
+    {
+      "id": "3",
+      "image": "https://picsum.photos/300/?random=13",
+      "titre": "Marketing Digital Avancé",
+      "description": "Stratégies avancées pour le marketing digital.",
+      "chargeHoraire": 30,
+      "difficulte": "intermédiaire",
+      "tags": [
+        "marketing",
+        "digital",
+        "SEO"
+      ],
+      "categories": [
+        "Marketing",
+        "Business"
+      ],
+      "programme": "https://drive.google.com/file/d/1oELR1VCa6f4MqIVL0MPW8AlysqehbNNK/view?usp=drive_link"
+    },
+    {
+      "id": "4",
+      "image": "https://picsum.photos/300/?random=14",
+      "titre": "Gestion de Projet Agile",
+      "description": "Apprenez à gérer des projets avec la méthode Agile.",
+      "chargeHoraire": 50,
+      "difficulte": "avancé",
+      "tags": [
+        "gestion",
+        "projet",
+        "agile"
+      ],
+      "categories": [
+        "Gestion",
+        "Business"
+      ],
+      "programme": "https://drive.google.com/file/d/1pCKZ13xhaz8pW_jrN2DE2xtztRheUsoV/view?usp=drive_link"
+    },
+    {
+      "id": "5",
+      "image": "https://picsum.photos/300/?random=15",
+      "titre": "Développement Mobile avec Java",
+      "description": "Créez des applications mobiles avec Java.",
+      "chargeHoraire": 45,
+      "difficulte": "intermédiaire",
+      "tags": [
+        "mobile",
+        "développement",
+        "java"
+      ],
+      "categories": [
+        "Développement Mobile",
+        "Technologie"
+      ],
+      "programme": "https://drive.google.com/file/d/1dkZtfozIfp-Bbr3Gblz1iyNWmLGevn-r/view?usp=drive_link"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1",
+      "formationId": "1",
+      "dateDebut": "2023-11-02",
+      "dateFin": "2023-11-30",
+      "formateurIds": [
+        "1"
+      ],
+      "candidatsInscrits": [
+        "6",
+        "7",
+        "6",
+        "8"
+      ],
+      "registerCandidat": 4
+    },
+    {
+      "id": "2",
+      "formationId": 2,
+      "formateurIds": [
+        2
+      ],
+      "dateDebut": "2023-12-01",
+      "dateFin": "2023-12-30",
+      "description": "Un bootcamp intensif pour les développeurs web en herbe.",
+      "candidatsInscrits": [],
+      "registerCandidat": 0
+    },
+    {
+      "id": "3",
+      "formationId": 3,
+      "formateurIds": [
+        3
+      ],
+      "dateDebut": "2024-01-10",
+      "dateFin": "2024-01-20",
+      "description": "Stratégies avancées pour le marketing digital.",
+      "candidatsInscrits": [
+        1,
+        2,
+        3
+      ],
+      "registerCandidat": 0
+    },
+    {
+      "id": "4",
+      "formationId": 4,
+      "formateurIds": [
+        4
+      ],
+      "dateDebut": "2024-02-05",
+      "dateFin": "2024-02-15",
+      "description": "Apprenez à gérer des projets avec la méthode Agile.",
+      "candidatsInscrits": [],
+      "registerCandidat": 0
+    },
+    {
+      "id": "5",
+      "formationId": 5,
+      "formateurIds": [
+        5
+      ],
+      "dateDebut": "2024-03-01",
+      "dateFin": "2024-03-20",
+      "description": "Créez des applications mobiles avec Java.",
+      "candidatsInscrits": [],
+      "registerCandidat": 0
+    },
+    {
+      "id": "6",
+      "formationId": 1,
+      "formateurIds": [
+        1
+      ],
+      "dateDebut": "2024-04-01",
+      "dateFin": "2024-04-30",
+      "description": "Deuxième session de Data Science.",
+      "candidatsInscrits": [],
+      "registerCandidat": 0
+    },
+    {
+      "id": "7",
+      "formationId": 2,
+      "formateurIds": [
+        2
+      ],
+      "dateDebut": "2024-05-01",
+      "dateFin": "2024-05-30",
+      "description": "Deuxième session de Développement Web.",
+      "candidatsInscrits": [],
+      "registerCandidat": 0
+    }
+  ]
+}

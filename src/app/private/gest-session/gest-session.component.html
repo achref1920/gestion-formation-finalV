@@ -1,0 +1,38 @@
+<app-admin-nav-bar></app-admin-nav-bar>
+
+<div class="container mt-4">
+  <div class="d-grid gap-2 mb-4">
+    <button class="btn btn-lg btn-primary" (click)="ajout()">
+      <i class="bi bi-plus-circle-fill me-2"></i>Ajouter une Session
+    </button>
+  </div>
+
+  <h1 class="display-5 fw-bold text-center mb-4">Liste des Sessions</h1>
+
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let session of sessionList">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="card-title fw-bold">Session ID: {{ session.id }}</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Formation ID:</strong> {{ session.formationId }}</li>
+            <li class="list-group-item"><strong>Date de Début:</strong> {{ session.dateDebut }}</li>
+            <li class="list-group-item"><strong>Date de Fin:</strong> {{ session.dateFin }}</li>
+            <li class="list-group-item"><strong>Formateurs ID:</strong> {{ session.formateurIds }}</li>
+            <li class="list-group-item"><strong>Participants ID:</strong> {{ session.candidatsInscrits }}</li>
+            <li class="list-group-item"><strong>Inscrire Candidat:</strong> {{ session.registerCandidat }}</li>
+          </ul>
+        </div>
+
+        <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+          <button (click)="EditSession(session.id)" class="btn btn-primary btn-sm">
+            <i class="bi bi-pencil-fill me-1"></i>Modifier
+          </button>
+          <button (click)="deleteSession(session.id)" class="btn btn-danger btn-sm">
+            <i class="bi bi-trash-fill me-1"></i>Supprimer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

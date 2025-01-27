@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<input type="text" placeholder="Search for a formation" [(ngModel)]="searchQuery" (input)="onSearch()" class="form-control rounded-pill search-bar pe-5">
+
+<div class="container mt-6" >
+    <h1>Liste des formation</h1>
+    
+    <div class="row">
+        <div class="col-3" *ngFor="let formation of filteredFormations">
+            <div class="card">
+                <img [src]="formation.image">
+                <div class="card-body">
+                    <h2 class="card-title">{{formation.titre}}</h2>
+
+                    <form class="d-flex">
+                        <button [routerLink]="['/deatails', formation.id]" class="btn btn-primary ">details</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

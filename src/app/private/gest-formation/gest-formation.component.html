@@ -1,0 +1,43 @@
+<app-admin-nav-bar></app-admin-nav-bar>
+
+<div class="container mt-4">
+  <div class="d-grid gap-2 mb-4">
+    <button class="btn btn-lg btn-primary" (click)="ajout()">
+      <i class="bi bi-plus-circle-fill me-2"></i>Ajouter une Formation
+    </button>
+  </div>
+
+  <h1 class="display-5 fw-bold text-center mb-4">Liste des Formations</h1>
+
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let formation of formationList">
+      <div class="card h-100 shadow-sm">
+        <img [src]="formation.image" class="card-img-top" alt="Image de {{ formation.titre }}" style="height: 200px; object-fit: cover;">
+
+        <div class="card-body">
+          <h2 class="card-title fw-bold">{{ formation.titre }}</h2>
+          <p class="card-text">{{ formation.description }}</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Catégories:</strong> {{ formation.categories.join(', ') }}</li>
+            <li class="list-group-item"><strong>Charge Horaire:</strong> {{ formation.chargeHoraire }} heures</li>
+            <li class="list-group-item">
+              <strong>Programme:</strong> 
+              <a [href]="formation.programme" target="_blank" class="btn btn-link p-0">Voir le programme</a>
+            </li>
+            <li class="list-group-item"><strong>Niveau de Difficulté:</strong> {{ formation.difficulte }}</li>
+            <li class="list-group-item"><strong>Tags:</strong> {{ formation.tags.join(', ') }}</li>
+          </ul>
+        </div>
+
+        <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+          <button (click)="EditFormation(formation.id)" class="btn btn-primary btn-sm">
+            <i class="bi bi-pencil-fill me-1"></i>Modifier
+          </button>
+          <button (click)="deleteFormation(formation.id)" class="btn btn-danger btn-sm">
+            <i class="bi bi-trash-fill me-1"></i>Supprimer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
